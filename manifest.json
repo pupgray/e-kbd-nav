@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "e-kbd-nav",
+  "version": "1.0.0",
+
+  "description": "Enables keyboard navigation on e* pages",
+  "homepage_url": "https://github.com/cwillsey06/e-kbd-nav",
+  "icons": {
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/icon32.png",
+    "default_title": "e-kbd-nav"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://e???.net/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
