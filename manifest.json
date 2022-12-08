@@ -13,12 +13,13 @@
 
   "browser_action": {
     "default_icon": "icons/icon32.png",
-    "default_title": "e-kbd-nav"
+    "default_title": "e-kbd-nav",
+    "default_popup": "public/index.html"
   },
 
   "content_scripts": [
     {
-      "matches": ["*://e???.net/*"],
+      "matches": ["https://e621.net/*", "https://e926.net/*"],
       "js": ["index.js"]
     }
   ]
