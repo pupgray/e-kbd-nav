@@ -22,7 +22,7 @@ You know the ones.
 | F1      | List bindings   |
 
 ## Download
-<!--
-[Firefox 🦊 Add-ons](https://addons.mozilla.org/firefox/addon/e-kbd-nav) -->
+
+[Firefox 🦊 Add-ons](https://addons.mozilla.org/firefox/addon/e-kbd-nav)
 
 [Releases](https://github.com/cwillsey06/e-kbd-nav/releases)
