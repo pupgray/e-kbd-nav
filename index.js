@@ -53,7 +53,7 @@ addHotkeyListener("d", clickElement(downloadButton));
 
 // Search
 addHotkeyListener("b", clickElement(returnToSearchPageLink));
-addHotkeyListener("", focusInput(searchBar));
+addHotkeyListener("/", focusInput(searchBar));
 
 // Special case for favorite buttons
 const addFavoriteButton = document.querySelector("#add-fav-button");
