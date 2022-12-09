@@ -19,6 +19,7 @@ const searchBar = document.querySelector("#tags");
 
 function addHotkeyListener(key, fn) {
   document.addEventListener("keydown", (event) => {
+    if (event.repeat) return;
     if (event.key === key) {
       fn();
     }
