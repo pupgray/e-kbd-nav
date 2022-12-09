@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "e-kbd-nav",
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "description": "Enables keyboard navigation on e* pages",
   "homepage_url": "https://github.com/cwillsey06/e-kbd-nav",
