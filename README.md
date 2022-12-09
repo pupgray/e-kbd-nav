@@ -3,9 +3,9 @@
 [![License](https://img.shields.io/github/license/cwillsey06/e-kbd-nav?style=flat-square)](https://raw.githubusercontent.com/cwillsey06/e-kbd-nav/main/LICENSE)
 [![Version](https://img.shields.io/github/v/tag/cwillsey06/e-kbd-nav?label=version&style=flat-square)](https://github.com/cwillsey06/e-kbd-nav/releases)
 
-A simple Firefox add-on that enables keyboard navigation on e sites.
+A simple Firefox add-on that enables keyboard navigation on e621 / e926.
 
-You know the ones.
+Support for more websites *may* come soon...
 
 ## How to use
 
