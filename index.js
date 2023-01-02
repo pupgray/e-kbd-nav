@@ -22,16 +22,20 @@ const commandSilencingElements = [
   HTMLTextAreaElement,
 ];
 
-function shouldSilenceCommands () {
-  return commandSilencingElements.some(element => {
-    return document.activeElement instanceof element;
-  });
+function shouldSilenceCommands(event) {
+  if (event.repeat) return true;
+  if (document.activeElement) {
+    return commandSilencingElements.some(element => {
+      return document.activeElement instanceof element;
+    });
+  } else {
+    return false;
+  }
 }
 
 function addHotkeyListener(key, fn) {
   document.addEventListener("keydown", (event) => {
-    if (event.repeat) return;
-    if (shouldSilenceCommands()) return;
+    if (shouldSilenceCommands(event)) return;
     if (event.key === key) {
       fn();
     }
