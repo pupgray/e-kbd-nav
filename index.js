@@ -17,9 +17,21 @@ const downloadButton = document.querySelector("#image-download-link a");
 const returnToSearchPageLink = document.querySelector(".search-name a");
 const searchBar = document.querySelector("#tags");
 
+const commandSilencingElements = [
+  HTMLInputElement,
+  HTMLTextAreaElement,
+];
+
+function shouldSilenceCommands () {
+  return commandSilencingElements.some(element => {
+    return document.activeElement instanceof element;
+  });
+}
+
 function addHotkeyListener(key, fn) {
   document.addEventListener("keydown", (event) => {
     if (event.repeat) return;
+    if (shouldSilenceCommands()) return;
     if (event.key === key) {
       fn();
     }
